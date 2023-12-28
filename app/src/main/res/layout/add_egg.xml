@@ -1,0 +1,72 @@
+<!-- res/layout/activity_egg_production.xml -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="12dp"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tvEggProduction"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginHorizontal="40dp"
+        android:gravity="center_vertical"
+        android:text="Add Eggs To Inventory"
+        android:textSize="30dp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:orientation="vertical"
+
+        android:padding="16dp">
+
+
+        <!-- Number of Eggs -->
+        <EditText
+            android:id="@+id/editBatchIdEgg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Batch Id"
+            android:inputType="number"
+            android:minHeight="48dp" />
+
+        <!-- Egg Size -->
+
+        <!-- Date of Egg Production -->
+        <EditText
+            android:id="@+id/editTextNumberOfEggs"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Number of Eggs"
+            android:inputType="number"
+            android:minHeight="48dp" />
+
+        <EditText
+            android:id="@+id/editTextDateEgg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Date"
+            android:minHeight="48dp" />
+
+        <!-- Button to Add Egg Production Record -->
+
+    </LinearLayout>
+    <Button
+        android:id="@+id/btnAddEggProdRecord"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:minHeight="48dp"
+        android:onClick="onAddEggProductionRecordClick"
+        android:text="Add Eggs To Record" />
+    <Button
+        android:id="@+id/btnAddEggBack"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:minHeight="48dp"
+        android:onClick="onAddEggProductionRecordClick"
+        android:text="Back" />
+</LinearLayout>

@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Farm_Application_2</string>
+    <string name="title_egg">Egg</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_bird">Bird</string>
+    <string name="title_feed">Feed</string>
+    <string name="floak">Floak</string>
+    <string name="floack" />
+</resources>

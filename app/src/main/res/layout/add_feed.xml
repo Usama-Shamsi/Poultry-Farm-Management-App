@@ -1,0 +1,79 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="12dp">
+    <TextView
+        android:id="@+id/tvFeedManagement"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:text="Add Feed "
+        android:gravity="center_vertical"
+        android:layout_marginHorizontal="110dp"
+        android:textStyle="bold"
+        android:textSize="30sp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="340dp"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- Feed Type -->
+        <EditText
+            android:id="@+id/editFeedId"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint=" Id"
+            android:minHeight="48dp" />
+        <EditText
+            android:id="@+id/editBatchId"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Flock Id"
+            android:minHeight="48dp" />
+
+        <!-- Quantity -->
+        <EditText
+            android:id="@+id/editTextQuantity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Quantity (in kg)"
+            android:inputType="numberDecimal"
+            android:minHeight="48dp" />
+
+        <!-- Cost -->
+        <EditText
+            android:id="@+id/editTextCost"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Cost (in currency)"
+            android:inputType="numberDecimal"
+            android:minHeight="48dp" />
+
+        <!-- Date of Feeding -->
+        <EditText
+            android:id="@+id/editTextDate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Date"
+            android:inputType="numberDecimal"
+            android:minHeight="48dp" />
+
+    </LinearLayout>
+    <!-- Button to Add Feed Record -->
+    <Button
+        android:id="@+id/btnSubmitFeedRecord"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="onAddFeedRecordClick"
+        android:text="Add Feed Record" />
+
+    <Button
+        android:id="@+id/btnAddFeedBack"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="onAddFeedRecordClick"
+        android:text="Back" />
+
+</LinearLayout>

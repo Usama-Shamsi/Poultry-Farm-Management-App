@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_dashboard">
+
+
+    <fragment
+        android:id="@+id/navigation_dashboard"
+        android:name="com.example.farm_application_2.ui.dashboard.DashboardFragment"
+        android:label="@string/title_dashboard"
+        tools:layout="@layout/fragment_dashboard" />
+    <activity
+        android:id="@+id/bird_activity"
+        android:name="com.example.farm_application_2.BirdMainActivity"
+        android:label="Bird"
+        tools:layout="@layout/fragment_bird"/>
+    <activity
+        android:id="@+id/egg_activity"
+        android:name="com.example.farm_application_2.EggMainActivity"
+        android:label="Egg"
+        tools:layout="@layout/fragment_egg"/>
+    <activity
+        android:id="@+id/feed_activity"
+        android:name="com.example.farm_application_2.FeedMainActivity"
+        android:label="Feed"
+        tools:layout="@layout/fragment_feed"/>
+
+</navigation>
